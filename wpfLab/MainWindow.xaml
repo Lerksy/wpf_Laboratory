@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:wpfLab"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" VerticalAlignment="Top">
-    <DockPanel LastChildFill="False">
-        <Label DockPanel.Dock="Top" Width="150" Margin="20">Label</Label>
-        <TextBox DockPanel.Dock="Right" Height="auto" Width="300">TextBox</TextBox>
-        <TextBox DockPanel.Dock="Left" Height="auto" Width="300">TextBox</TextBox>
-        <Button DockPanel.Dock="Bottom" Width="150" Margin="20">Button</Button>
-    </DockPanel>
+    <Canvas Background="Aqua">
+        <Label Canvas.Top="20" Canvas.Left="20">Label</Label>
+        <TextBox Canvas.Top="40" Canvas.Left="40">text</TextBox>
+        <Button Canvas.Top="60" Canvas.Left="60">button</Button>
+    </Canvas>
+
 
 
 </Window>
