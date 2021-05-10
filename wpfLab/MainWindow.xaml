@@ -16,7 +16,7 @@
             <Setter Property="Margin" Value="5"></Setter>
             <Setter Property="Background" Value="Transparent"></Setter>
         </Style>
-
+        
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -25,16 +25,16 @@
         </Grid.RowDefinitions>
         <Border Grid.Row="0"  BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Background="{StaticResource gradientBrush}"></Border>
         <StackPanel Grid.Row="0" HorizontalAlignment="Left" Orientation="Horizontal">
-            <Button ToolTip="Open">
+            <Button ToolTip="Open" Command="Open">
                 <Image Source="Images/folder.png"></Image>
             </Button>
-            <Button ToolTip="Clear">
+            <Button ToolTip="Clean" Command="Delete">
                 <Image Source="Images/paint.png"></Image>
             </Button>
-            <Button ToolTip="Copy">
+            <Button ToolTip="Copy" Command="Copy">
                 <Image Source="Images/note.png"></Image>
             </Button>
-            <Button ToolTip="Paste">
+            <Button ToolTip="Paste" Command="Paste">
                 <Image Source="Images/paste.png"></Image>
             </Button>
         </StackPanel>
