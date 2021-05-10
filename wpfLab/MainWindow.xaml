@@ -12,6 +12,11 @@
             <GradientStop Color="Blue" Offset="0.5"></GradientStop>
             <GradientStop Color="Yellow" Offset="0.9"></GradientStop>
         </LinearGradientBrush>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="Background" Value="Transparent"></Setter>
+        </Style>
+
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -39,10 +44,14 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
-            <TextBox Grid.Row="0" VerticalScrollBarVisibility="Visible" Margin="15"></TextBox>
+            
             <DockPanel Grid.Row="1" Margin="8">
-                <Button Width="50" DockPanel.Dock="Bottom">Ok</Button>
+                <Label Margin="4">Размер Шрифта</Label>
+                <Slider Margin="4" MinWidth="100" x:Name="fontSlider" Maximum="100" Minimum="12"></Slider>
+                <Button Width="50" DockPanel.Dock="Bottom" Command="Save">Ok</Button>
             </DockPanel>
+            <TextBox Grid.Row="0" VerticalScrollBarVisibility="Visible" Margin="15" Name="inputTextBox" FontSize="{Binding ElementName=fontSlider, Path=Value}"></TextBox>
+            
         </Grid>
     </Grid>
 </Window>
