@@ -5,14 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpfLab"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <StackPanel>
-        <Label HorizontalAlignment="Center">Label</Label>
-        <TextBox>TextBox</TextBox>
-        <TextBox>TextBox</TextBox>
-        <TextBox>TextBox</TextBox>
-        <TextBox>TextBox</TextBox>
-        <Button Margin="150">Button</Button>
-    </StackPanel>
+        Title="MainWindow" Height="450" Width="800" VerticalAlignment="Top">
+    <WrapPanel Margin="10" Width="600">
+        <Label Width="100" Margin="3">Label</Label>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <Label Width="100" Margin="3">Label</Label>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <TextBox Width="50">TextBox</TextBox>
+        <Button Width="200" Margin="150, 20">Button</Button>
+    </WrapPanel>
 
 </Window>
