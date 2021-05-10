@@ -8,21 +8,21 @@
         Title="Text Editor" Height="450" Width="800" VerticalAlignment="Top">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         
         <StackPanel Grid.Row="0" HorizontalAlignment="Left" Orientation="Horizontal">
-            <Button Width="100" Height="100" ToolTip="Open">
+            <Button ToolTip="Open">
                 <Image Source="Images/folder.png"></Image>
             </Button>
-            <Button Width="100" Height="100" ToolTip="Clear">
+            <Button ToolTip="Clear">
                 <Image Source="Images/paint.png"></Image>
             </Button>
-            <Button Width="100" Height="100" ToolTip="Copy">
+            <Button ToolTip="Copy">
                 <Image Source="Images/note.png"></Image>
             </Button>
-            <Button Width="100" Height="100" ToolTip="Paste">
+            <Button ToolTip="Paste">
                 <Image Source="Images/paste.png"></Image>
             </Button>
         </StackPanel>
