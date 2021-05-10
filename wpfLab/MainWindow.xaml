@@ -6,26 +6,12 @@
         xmlns:local="clr-namespace:wpfLab"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" VerticalAlignment="Top">
-    <WrapPanel Margin="10" Width="600">
-        <Label Width="100" Margin="3">Label</Label>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <Label Width="100" Margin="3">Label</Label>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <TextBox Width="50">TextBox</TextBox>
-        <Button Width="200" Margin="150, 20">Button</Button>
-    </WrapPanel>
+    <DockPanel LastChildFill="False">
+        <Label DockPanel.Dock="Top" Width="150" Margin="20">Label</Label>
+        <TextBox DockPanel.Dock="Right" Height="auto" Width="300">TextBox</TextBox>
+        <TextBox DockPanel.Dock="Left" Height="auto" Width="300">TextBox</TextBox>
+        <Button DockPanel.Dock="Bottom" Width="150" Margin="20">Button</Button>
+    </DockPanel>
+
 
 </Window>
