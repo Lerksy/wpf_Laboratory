@@ -5,12 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpfLab"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" VerticalAlignment="Top">
-    <Canvas Background="Aqua">
-        <Label Canvas.Top="20" Canvas.Left="20">Label</Label>
-        <TextBox Canvas.Top="40" Canvas.Left="40">text</TextBox>
-        <Button Canvas.Top="60" Canvas.Left="60">button</Button>
-    </Canvas>
+        Title="Text Editor" Height="450" Width="800" VerticalAlignment="Top">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0" HorizontalAlignment="Left" Orientation="Horizontal">
+            <Button Width="100" Height="100" ToolTip="Open">
+                <Image Source="Images/folder.png"></Image>
+            </Button>
+            <Button Width="100" Height="100" ToolTip="Clear">
+                <Image Source="Images/paint.png"></Image>
+            </Button>
+            <Button Width="100" Height="100" ToolTip="Copy">
+                <Image Source="Images/note.png"></Image>
+            </Button>
+            <Button Width="100" Height="100" ToolTip="Paste">
+                <Image Source="Images/paste.png"></Image>
+            </Button>
+        </StackPanel>
+        <Border Grid.Row="0"  BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10"></Border>
+    </Grid>
+    
+
+    
 
 
 
