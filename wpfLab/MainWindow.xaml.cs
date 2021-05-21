@@ -75,7 +75,7 @@ namespace wpfLab
         }
         void execute_Copy(object sender, ExecutedRoutedEventArgs e)
         {
-            Clipboard.SetText(inputTextBox.Text);
+            Clipboard.SetDataObject(inputTextBox.Text);
         }
         void canExecute_Paste(object sender, CanExecuteRoutedEventArgs e)
         {

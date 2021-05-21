@@ -8,8 +8,7 @@
         Title="Text Editor" Height="450" Width="800" VerticalAlignment="Top">
     <Window.Resources>
         <LinearGradientBrush x:Key="gradientBrush">
-            <GradientStop Color="Yellow" Offset="0"></GradientStop>
-            <GradientStop Color="Blue" Offset="0.5"></GradientStop>
+            <GradientStop Color="Red" Offset="0"></GradientStop>
             <GradientStop Color="Yellow" Offset="0.9"></GradientStop>
         </LinearGradientBrush>
         <Style TargetType="Button">
@@ -50,7 +49,7 @@
                 <Slider Margin="4" MinWidth="100" x:Name="fontSlider" Maximum="100" Minimum="12"></Slider>
                 <Button Width="50" DockPanel.Dock="Bottom" Command="Save">Ok</Button>
             </DockPanel>
-            <TextBox Grid.Row="0" VerticalScrollBarVisibility="Visible" Margin="15" Name="inputTextBox" FontSize="{Binding ElementName=fontSlider, Path=Value}"></TextBox>
+            <TextBox Grid.Row="0" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" Margin="15" Name="inputTextBox" FontSize="{Binding ElementName=fontSlider, Path=Value}"></TextBox>
             
         </Grid>
     </Grid>
